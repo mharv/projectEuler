@@ -18,7 +18,8 @@ while(True):
 		if number % (i+1) == 0:
 			result[i] = True
 		else:
-			remainder = (i+1) - (number % (i+1))
+			#the following line speeds the problem run time up by approximately 1 minute
+			remainder = (i+1) - (number % (i+1)) 
 			break
 	
 	if number % 1000000 == 0:
